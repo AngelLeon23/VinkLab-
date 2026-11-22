@@ -1,4 +1,4 @@
--- VinculIA · Datos de prueba (10 proyectos + 5 convocatorias). Ejecutar DESPUÉS de schema.sql.
+-- VinkLab · Datos de prueba (10 proyectos + 5 convocatorias). Ejecutar DESPUÉS de schema.sql.
 -- Son datos simulados, solo para la prueba piloto.
 
 insert into usuarios (id, nombre, email, rol) values

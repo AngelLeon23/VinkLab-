@@ -1,6 +1,6 @@
 import FormCampana from "@/components/FormCampana";
 
-export const metadata = { title: "Publicar convocatoria — VinculIA" };
+export const metadata = { title: "Publicar convocatoria — VinkLab" };
 
 export default function NuevaCampana() {
   return (

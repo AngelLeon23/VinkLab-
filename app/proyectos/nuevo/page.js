@@ -1,6 +1,6 @@
 import FormProyecto from "@/components/FormProyecto";
 
-export const metadata = { title: "Publicar proyecto — VinculIA" };
+export const metadata = { title: "Publicar proyecto — VinkLab" };
 
 export default function NuevoProyecto() {
   return (

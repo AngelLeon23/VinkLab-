@@ -1,4 +1,4 @@
-# VinculIA 🔬🤝💡
+# VinkLab 🔬🤝💡
 
 **Ciencia que encuentra su inversión.** Marketplace de innovación abierta que vincula proyectos de ciencia y tecnología con empresas e inversionistas, con un **asistente de redacción por IA** (3 mejoras antes de publicar) y un **motor de compatibilidad** (% de coincidencia proyecto ↔ convocatoria).
 
@@ -61,14 +61,14 @@ Stack (el de tu documento): **Next.js + Tailwind CSS · Supabase (PostgreSQL) ·
 |---|---|---|
 | GitHub | Guardar el código (te lo pide la materia) | https://github.com |
 | Supabase | Base de datos PostgreSQL | https://supabase.com |
-| Groq | API de IA con Llama 3 | https://console.groq.com |
+| Groq | Groq (GPT-OSS) | https://console.groq.com |
 | Vercel | Publicar la app en internet | https://vercel.com (entra con tu cuenta de GitHub) |
 | Hugging Face *(opcional)* | Embeddings semánticos más precisos | https://huggingface.co |
 
 ## Paso 5 · Preparar el proyecto en tu computadora
 
-1. Descomprime el archivo **`vinculia.zip`** en una carpeta fácil, por ejemplo `C:\proyectos\vinculia`.
-2. Abre VS Code → **File → Open Folder** → selecciona la carpeta `vinculia`.
+1. Descomprime el archivo **`VinkLab.zip`** en una carpeta fácil, por ejemplo `C:\proyectos\VinkLab`.
+2. Abre VS Code → **File → Open Folder** → selecciona la carpeta `VinkLab`.
 3. Abre la terminal integrada: menú **Terminal → New Terminal**.
 4. Instala las dependencias (tarda 1–3 min):
    ```bash
@@ -77,7 +77,7 @@ Stack (el de tu documento): **Next.js + Tailwind CSS · Supabase (PostgreSQL) ·
 
 ## Paso 6 · Crear la base de datos en Supabase
 
-1. En Supabase pulsa **New project**. Nombre: `vinculia`. Crea y **guarda la contraseña** de la base de datos. Elige la región más cercana (por ejemplo *East US*). Espera ~2 min a que termine de crearse.
+1. En Supabase pulsa **New project**. Nombre: `VinkLab`. Crea y **guarda la contraseña** de la base de datos. Elige la región más cercana (por ejemplo *East US*). Espera ~2 min a que termine de crearse.
 2. Menú izquierdo → **SQL Editor** → **New query**.
 3. Abre en VS Code el archivo `supabase/schema.sql`, **copia todo**, pégalo en el editor de Supabase y pulsa **Run**. Debe decir *Success*.
 4. Nueva query → copia todo `supabase/seed.sql` → **Run**. Esto carga 10 proyectos y 5 convocatorias de prueba.
@@ -121,23 +121,23 @@ Para detener el servidor: `Ctrl + C`.
 
 ## Paso 10 · Subir el código a GitHub (entregable)
 
-1. En GitHub: **New repository** → nombre `vinculia` → *Public* → **sin** README ni .gitignore → **Create**.
+1. En GitHub: **New repository** → nombre `VinkLab` → *Public* → **sin** README ni .gitignore → **Create**.
 2. En la terminal de VS Code:
    ```bash
    git init
    git add .
-   git commit -m "VinculIA: primera versión"
+   git commit -m "VinkLab: primera versión"
    git branch -M main
-   git remote add origin https://github.com/TU-USUARIO/vinculia.git
+   git remote add origin https://github.com/TU-USUARIO/VinkLab.git
    git push -u origin main
    ```
 3. Verifica en GitHub que **no** aparezca `.env.local` (el `.gitignore` ya lo excluye). Esa URL del repositorio es la que entregas.
 
 ## Paso 11 · Publicarla en internet con Vercel
 
-1. En **https://vercel.com** → **Add New… → Project** → importa el repositorio `vinculia`.
+1. En **https://vercel.com** → **Add New… → Project** → importa el repositorio `VinkLab`.
 2. Antes de pulsar *Deploy*, abre **Environment Variables** y agrega **las mismas variables** de tu `.env.local` (una por una): `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `GROQ_API_KEY`, `GROQ_MODEL` y, si lo usas, `HF_TOKEN` y `HF_MODEL`.
-3. Pulsa **Deploy**. En ~1 minuto tendrás un enlace público `https://vinculia-xxxx.vercel.app`.
+3. Pulsa **Deploy**. En ~1 minuto tendrás un enlace público `https://VinkLab-xxxx.vercel.app`.
 4. Cada vez que hagas `git push`, Vercel vuelve a publicar automáticamente.
 
 ## Paso 12 · Prueba piloto y evidencias (Fases 4 y 5 de tu documento)
@@ -162,7 +162,7 @@ Para detener el servidor: `Ctrl + C`.
 # Estructura
 
 ```
-vinculia/
+VinkLab/
 ├─ app/                 páginas y rutas API (Next.js App Router)
 │  ├─ page.js           vitrina + filtros
 │  ├─ proyectos/        nuevo + detalle (con ranking de convocatorias)
