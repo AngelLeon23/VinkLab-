@@ -3,7 +3,7 @@
 **Ciencia que encuentra su inversión.** Marketplace de innovación abierta que vincula proyectos de ciencia y tecnología con empresas e inversionistas, con un **asistente de redacción por IA** (3 mejoras antes de publicar) y un **motor de compatibilidad** (% de coincidencia proyecto ↔ convocatoria).
 
 Proyecto de *Fundamentos de Inteligencia Artificial* — UT Tabasco.
-Stack (el de tu documento): **Next.js + Tailwind CSS · Supabase (PostgreSQL) · Groq (Llama 3) · Vercel · Git/GitHub**.
+Stack (el de tu documento): **Next.js + Tailwind CSS · Supabase (PostgreSQL) · Groq (GPT-OSS) · Vercel · Git/GitHub**.
 
 ---
 
